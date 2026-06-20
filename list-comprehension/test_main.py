@@ -1,6 +1,10 @@
 import ast
 import inspect
-from incomplete_main import find_powerful_sword
+try:
+    from main import find_powerful_swords
+except ImportError:
+    from incomplete_main import find_powerful_swords
+
 
 run_cases = [
     ([1, 2, 3, 4, 5, 6], [5, 6]),
@@ -17,10 +21,8 @@ submit_cases = run_cases + [
 
 def test_syntax():
     print("-" * 40)
-    print("Checking if list comprehension is used...")
-    print("Expected:\nFunction should be implemented using a list comprehension and no traditional for-loops.")
     try:
-        source = inspect.getsource(find_powerful_sword)
+        source = inspect.getsource(find_powerful_swords)
         tree = ast.parse(source)
         
         has_list_comp = False
@@ -54,7 +56,7 @@ def test(input1, expected_output):
     print(f"Input:\n{input1}")
     print(f"Expected:\n{expected_output}")
     try:
-        result = find_powerful_sword(input1)
+        result = find_powerful_swords(input1)
     except Exception as e:
         print(f"Error: {e}")
         return False

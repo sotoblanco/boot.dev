@@ -1,4 +1,4 @@
-def find_powerful_sword(inventory):
+def find_powerful_swords(inventory):
     powerful_swords = []
     for item in inventory:
         if item > 4:
