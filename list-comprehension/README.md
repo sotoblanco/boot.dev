@@ -2,7 +2,11 @@
 
 Lists are the most common data structure you will use in Python due to their versatility and the wide variety of ways they can be manipulated. 
 
-List comprehensions build on this by offering a concise and highly readable way to create new lists from existing ones.
+For loops are one of those things that once you learn it you will try to use everywhere, your next level will be replacing for list comprehension.
+
+![List Comprehension Syntax Diagram](image/image2.png)
+
+List comprehensions build on this by offering a concise and highly readable way to create new lists from existing ones (Just don't go crazy about it). Some people still keep the for loop syntax for cases when you have complex rules to make it easier to follow. The goal is to build intuition so you can decide when to use it.
 
 ## The Syntax
 
@@ -11,8 +15,6 @@ A list comprehension consists of brackets containing an expression followed by a
 ```python
 new_list = [expression for item in iterable if condition]
 ```
-
-![List Comprehension Syntax Diagram](image/image.png)
 
 Here is how the components map to a traditional loop:
 1. **`expression`**: The value that gets added to the new list (often the item itself, or a modified version of it).
@@ -53,14 +55,17 @@ While list comprehensions are great for simple cases, you should use standard lo
 
 # Assignment
 
-In `main.py`, you will find a function called `find_powerful_sword` that filters a list of sword power levels using a traditional `for` loop.
+Complete the `find_powerful_sword` function. It takes a list of sword power levels (`inventory`) and should return a new list containing only the powerful swords:
 
-Your task is to refactor this function to use a single-line list comprehension instead.
+- Use a list comprehension to filter the list.
+- Only include swords with a power level strictly greater than 4.
 
-## Input
+## Tips
 
-- `inventory`: A list of integers representing the power levels of swords in a player's inventory.
+- The basic syntax for filtering with a list comprehension is:
+  ```python
+  [expression for item in iterable if condition]
+  ```
+- In this exercise, the condition is that the power level of the sword must be greater than 4.
 
-## Output
 
-- A new list containing only the power levels that are strictly greater than 4.
