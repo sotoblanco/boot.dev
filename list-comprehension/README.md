@@ -1,12 +1,12 @@
 # List Comprehension
 
-Lists are the most common data structure you will use in Python, especially when managing hero inventories, spellbooks, or lists of monsters.
+Lists are the most common data structure you will use in Python due to their versatility and the wide variety of ways they can be manipulated. 
 
 `for` loops are one of those tools that once you learn, you will want to use everywhere. However, your next level as a developer is learning when to replace a traditional `for` loop with a **list comprehension** to make your code more elegant.
 
 ![List Comprehension Syntax Diagram](image/image2.png)
 
-List comprehensions offer a concise and highly readable way to create new lists from existing ones. However, you shouldn't go crazy with them—many developers still prefer traditional `for` loops when dealing with complex rules or nested logic to keep the code easy to follow. The goal is to build your intuition so you can decide which approach is best for the task at hand.
+List comprehensions offer a concise and highly readable way to create new lists from existing ones. However, you shouldn't go crazy with them. Many developers still prefer traditional `for` loops when dealing with complex rules or nested logic to keep the code easy to follow. The goal is to build your intuition so you can decide which approach is best for the task at hand.
 
 ## The Syntax
 
@@ -51,7 +51,7 @@ print(healing_potions)
 
 Both approaches achieve the exact same outcome, but the list comprehension version is shorter, cleaner, and maps directly to the mental model of filtering a collection.
 
-While list comprehensions are great for simple cases, you should use standard loops if the logic becomes too complex or has multiple nested conditions. Readability and clean code are always the priorities.
+> While list comprehensions are great for simple cases, you should use standard loops if the logic becomes too complex or has multiple nested conditions. Readability and clean code are always the priorities.
 
 # Assignment
 
@@ -68,4 +68,3 @@ Complete the `find_powerful_swords` function. It takes a list of sword power lev
   ```python
   [expression for item in iterable if condition]
   ```
-- In this exercise, the condition is that the power level of the sword must be greater than 4.
