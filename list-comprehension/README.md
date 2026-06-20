@@ -1,6 +1,6 @@
 # List Comprehension
 
-Lists are the most common data structure you will use in Python due to their versatility and the wide variety of ways they can be manipulated.
+Lists are the most common data structure you will use in Python due to their versatility and the wide variety of ways they can be manipulated. 
 
 List comprehensions build on this by offering a concise and highly readable way to create new lists from existing ones.
 
@@ -11,6 +11,8 @@ A list comprehension consists of brackets containing an expression followed by a
 ```python
 new_list = [expression for item in iterable if condition]
 ```
+
+![List Comprehension Syntax Diagram](image/image.png)
 
 Here is how the components map to a traditional loop:
 1. **`expression`**: The value that gets added to the new list (often the item itself, or a modified version of it).

@@ -1,10 +1,6 @@
 import ast
 import inspect
-
-try:
-    from main import find_powerful_sword
-except ImportError:
-    from incomplete_main import find_powerful_sword
+from incomplete_main import find_powerful_sword
 
 run_cases = [
     ([1, 2, 3, 4, 5, 6], [5, 6]),
