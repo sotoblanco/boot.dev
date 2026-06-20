@@ -2,9 +2,7 @@
 
 In Python, we often need to loop through a list and keep track of both the index (the position) and the item itself. 
 
-Common examples in game development include showing ranked leaderboard items, labeling inventory slots, or finding positions of entities in a grid.
-
-A common beginner pattern to track the index is using `range(len(...))` and indexing back into the list:
+A common pattern from which we all start to track the index is using `range(len(...))` and indexing back into the list:
 
 ```python
 hallway = ["goblin", "empty", "chest", "dragon"]
@@ -18,7 +16,9 @@ While this works, Python offers a cleaner, more readable, and pythonic way to ac
 
 ## The Syntax
 
-The `enumerate()` function takes an iterable (like a list) and returns an enumerate object. It yields pairs containing the index (starting from 0 by default) and the corresponding item.
+The `enumerate()` function takes an iterable (like a list) and returns an enumerate object. It yields pairs containing the index starting from 0 (like european elevators) and the corresponding item.
+
+![Enumerate Syntax Diagram](image/image.png)
 
 ```python
 for index, item in enumerate(iterable):
