@@ -2,11 +2,11 @@
 
 Lists are the most common data structure you will use in Python due to their versatility and the wide variety of ways they can be manipulated. 
 
-`for` loops are one of those tools that once you learn, you will want to use everywhere. However, your next level as a developer is learning when to replace a traditional `for` loop with a **list comprehension** to make your code more elegant.
+`for` loops are one of those tools that, once you learn them, you'll want to use everywhere. However, your next step as a developer is learning when to replace a traditional loop with a list comprehension to make your code more elegant.
 
 ![List Comprehension Syntax Diagram](image/image2.png)
 
-List comprehensions offer a concise and highly readable way to create new lists from existing ones. However, you shouldn't go crazy with them. Many developers still prefer traditional `for` loops when dealing with complex rules or nested logic to keep the code easy to follow. The goal is to build your intuition so you can decide which approach is best for the task at hand.
+List comprehensions offer a concise and highly readable way to create new lists from existing ones. However, try not to overcomplicate things. Many developers still prefer traditional loops when dealing with complex rules or nested logic to keep the code readable. The goal is to build your intuition so you can decide which approach is best for the task at hand.
 
 ## The Syntax
 
@@ -55,7 +55,7 @@ Both approaches achieve the exact same outcome, but the list comprehension versi
 
 # Assignment
 
-A local band of goblins has raided the village armory and left behind a messy pile of swords. Most of them are rusted butter knives with low power levels.
+However, try not to overcomplicate things. Many developers still prefer traditional loops when dealing with complex rules or nested logic to keep the code readable.
 
 Complete the `find_powerful_swords` function. It takes a list of sword power levels (`inventory`) and should return a new list containing only the powerful swords:
 
