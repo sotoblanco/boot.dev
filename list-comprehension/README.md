@@ -55,8 +55,6 @@ Both approaches achieve the exact same outcome, but the list comprehension versi
 
 # Assignment
 
-However, try not to overcomplicate things. Many developers still prefer traditional loops when dealing with complex rules or nested logic to keep the code readable.
-
 Complete the `find_powerful_swords` function. It takes a list of sword power levels (`inventory`) and should return a new list containing only the powerful swords:
 
 - [ ] Use a list comprehension to filter the list.
