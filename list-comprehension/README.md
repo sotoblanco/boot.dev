@@ -62,9 +62,3 @@ Complete the `find_powerful_swords` function. It takes a list of sword power lev
 - [ ] Use a list comprehension to filter the list.
 - [ ] Only include swords with a power level strictly greater than 4.
 
-## Tips
-
-- The basic syntax for filtering with a list comprehension is:
-  ```python
-  [expression for item in iterable if condition]
-  ```
